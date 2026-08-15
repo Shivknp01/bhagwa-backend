@@ -4,27 +4,27 @@
 
 -- 1. SEED DEITIES
 INSERT INTO public.deities (id, name, slug, title, symbol, icon_key, description) VALUES
-('d1111111-1111-1111-1111-111111111111', 'Mahadev', 'mahadev', 'Lord Shiva', '🔱', 'om', 'The supreme lord of destruction, meditation, and cosmic dance.'),
-('d2222222-2222-2222-2222-222222222222', 'Hanuman', 'hanuman', 'Sankat Mochan', '🙏', 'gada', 'The ultimate symbol of devotion, strength, and protection.'),
-('d3333333-3333-3333-3333-333333333333', 'Krishna', 'krishna', 'Murlidhar', '🦚', 'flute', 'The divine flute player, embodiment of love and wisdom.'),
-('d4444444-4444-4444-4444-444444444444', 'Shri Ram', 'ram', 'Maryada Purushottam', '🏹', 'bow', 'The ideal man, protector of righteousness and virtue.'),
-('d5555555-5555-5555-5555-555555555555', 'Ganesh', 'ganesh', 'Vighnaharta', '🐘', 'modak', 'The remover of all obstacles and harbinger of wisdom.'),
-('d6666666-6666-6666-6666-666666666666', 'Durga', 'durga', 'Maa Ambe', '🌺', 'trishul', 'The supreme divine mother and destroyer of negativity.'),
-('d7777777-7777-7777-7777-777777777777', 'Lakshmi', 'lakshmi', 'Maa Lakshmi', '✨', 'lotus', 'The goddess of wealth, prosperity, and spiritual abundance.'),
-('d8888888-8888-8888-8888-888888888888', 'Saraswati', 'saraswati', 'Maa Sharda', '🎻', 'veena', 'The goddess of knowledge, music, arts, and wisdom.')
+('11111111-1111-1111-1111-111111111111', 'Mahadev', 'mahadev', 'Lord Shiva', '🔱', 'om', 'The supreme lord of destruction, meditation, and cosmic dance.'),
+('22222222-2222-2222-2222-222222222222', 'Hanuman', 'hanuman', 'Sankat Mochan', '🙏', 'gada', 'The ultimate symbol of devotion, strength, and protection.'),
+('33333333-3333-3333-3333-333333333333', 'Krishna', 'krishna', 'Murlidhar', '🦚', 'flute', 'The divine flute player, embodiment of love and wisdom.'),
+('44444444-4444-4444-4444-444444444444', 'Shri Ram', 'ram', 'Maryada Purushottam', '🏹', 'bow', 'The ideal man, protector of righteousness and virtue.'),
+('55555555-5555-5555-5555-555555555555', 'Ganesh', 'ganesh', 'Vighnaharta', '🐘', 'modak', 'The remover of all obstacles and harbinger of wisdom.'),
+('66666666-6666-6666-6666-666666666666', 'Durga', 'durga', 'Maa Ambe', '🌺', 'trishul', 'The supreme divine mother and destroyer of negativity.'),
+('77777777-7777-7777-7777-777777777777', 'Lakshmi', 'lakshmi', 'Maa Lakshmi', '✨', 'lotus', 'The goddess of wealth, prosperity, and spiritual abundance.'),
+('88888888-8888-8888-8888-888888888888', 'Saraswati', 'saraswati', 'Maa Sharda', '🎻', 'veena', 'The goddess of knowledge, music, arts, and wisdom.')
 ON CONFLICT (name) DO NOTHING;
 
 -- 2. SEED CATEGORIES
 INSERT INTO public.categories (id, name, slug, emoji, sub_label, gradient_colors) VALUES
-('c1111111-1111-1111-1111-111111111111', 'All', 'all', '🚩', 'पावन संगम', ARRAY['#D84315', '#FF6D00', '#FFB300']),
-('c2222222-2222-2222-2222-222222222222', 'Wallpaper', 'wallpaper', '🖼', 'HD वॉलपेपर', ARRAY['#E65100', '#F57C00', '#FFB74D']),
-('c3333333-3333-3333-3333-333333333333', 'Bhajan', 'bhajan', '🙏', 'मधुर भजन', ARRAY['#C2185B', '#E91E63', '#F48FB1']),
-('c4444444-4444-4444-4444-444444444444', 'Music', 'music', '🎵', 'भक्ति संगीत', ARRAY['#7B1FA2', '#9C27B0', '#CE93D8']),
-('c5555555-5555-5555-5555-555555555555', 'Ringtone', 'ringtone', '🔔', 'फोन रिंगटोन', ARRAY['#0097A7', '#00BCD4', '#80DEEA']),
-('c6666666-6666-6666-6666-666666666666', 'Mantra', 'mantra', '🕉', 'वेदिक मंत्र', ARRAY['#388E3C', '#4CAF50', '#A5D6A7']),
-('c7777777-7777-7777-7777-777777777777', 'Stuti', 'stuti', '📖', 'पवित्र स्तुति', ARRAY['#F57F17', '#FBC02D', '#FFF59D']),
-('c8888888-8888-8888-8888-888888888888', 'Horoscope', 'horoscope', '🔮', 'आज का राशिफल', ARRAY['#512DA8', '#673AB7', '#B39DDB']),
-('c9999999-9999-9999-9999-999999999999', 'Status', 'status', '📱', 'स्टेटस शेयर', ARRAY['#D32F2F', '#F44336', '#EF9A9A'])
+('a1111111-1111-1111-1111-111111111111', 'All', 'all', '🚩', 'पावन संगम', ARRAY['#D84315', '#FF6D00', '#FFB300']),
+('a2222222-2222-2222-2222-222222222222', 'Wallpaper', 'wallpaper', '🖼', 'HD वॉलपेपर', ARRAY['#E65100', '#F57C00', '#FFB74D']),
+('a3333333-3333-3333-3333-333333333333', 'Bhajan', 'bhajan', '🙏', 'मधुर भजन', ARRAY['#C2185B', '#E91E63', '#F48FB1']),
+('a4444444-4444-4444-4444-444444444444', 'Music', 'music', '🎵', 'भक्ति संगीत', ARRAY['#7B1FA2', '#9C27B0', '#CE93D8']),
+('a5555555-5555-5555-5555-555555555555', 'Ringtone', 'ringtone', '🔔', 'फोन रिंगटोन', ARRAY['#0097A7', '#00BCD4', '#80DEEA']),
+('a6666666-6666-6666-6666-666666666666', 'Mantra', 'mantra', '🕉', 'वेदिक मंत्र', ARRAY['#388E3C', '#4CAF50', '#A5D6A7']),
+('a7777777-7777-7777-7777-777777777777', 'Stuti', 'stuti', '📖', 'पवित्र स्तुति', ARRAY['#F57F17', '#FBC02D', '#FFF59D']),
+('a8888888-8888-8888-8888-888888888888', 'Horoscope', 'horoscope', '🔮', 'आज का राशिफल', ARRAY['#512DA8', '#673AB7', '#B39DDB']),
+('a9999999-9999-9999-9999-999999999999', 'Status', 'status', '📱', 'स्टेटस शेयर', ARRAY['#D32F2F', '#F44336', '#EF9A9A'])
 ON CONFLICT (name) DO NOTHING;
 
 -- 3. SEED SAMPLE POSTS
@@ -34,14 +34,14 @@ INSERT INTO public.posts (
   actual_views, actual_likes, actual_comments, actual_shares, actual_saves, is_featured, is_pinned, status
 ) VALUES
 (
-  'p1111111-1111-1111-1111-111111111111',
+  'b1111111-1111-1111-1111-111111111111',
   'status',
   '🙏 Good Morning - Har Har Mahadev',
   '🙏 शुभ प्रभात - हर हर महादेव',
   'May Lord Shiva shower endless peace, good health, and prosperous energy upon you and your family today. Har Har Mahadev! 🔱',
   'भगवान शिव आपके और आपके परिवार पर सुख, शांति, उत्तम स्वास्थ्य और समृद्धि की वर्षा करें।',
-  'd1111111-1111-1111-1111-111111111111',
-  'c9999999-9999-9999-9999-999999999999',
+  '11111111-1111-1111-1111-111111111111',
+  'a9999999-9999-9999-9999-999999999999',
   'Hindi',
   'shareStatus',
   'Share on WhatsApp',
@@ -53,14 +53,14 @@ INSERT INTO public.posts (
   82400, 24500, 1830, 12400, 5120, TRUE, TRUE, 'published'
 ),
 (
-  'p2222222-2222-2222-2222-222222222222',
+  'b2222222-2222-2222-2222-222222222222',
   'wallpaper',
   '🖼 Sacred 4K Mahadev Meditation Wallpaper',
   '🖼 अलौकिक 4K महादेव ध्यान वॉलपेपर',
   'Ultra HD 4K Sacred Mahadev Meditation Wallpaper. Set this divine image on your home screen or lock screen.',
   'अल्ट्रा एचडी ४के दिव्य महादेव ध्यान वॉलपेपर। इसे अपनी होम स्क्रीन पर लगाएं।',
-  'd1111111-1111-1111-1111-111111111111',
-  'c2222222-2222-2222-2222-222222222222',
+  '11111111-1111-1111-1111-111111111111',
+  'a2222222-2222-2222-2222-222222222222',
   'Hindi',
   'setWallpaper',
   'Set Wallpaper',
@@ -72,14 +72,14 @@ INSERT INTO public.posts (
   120500, 32000, 2100, 8900, 14200, TRUE, FALSE, 'published'
 ),
 (
-  'p3333333-3333-3333-3333-333333333333',
+  'b3333333-3333-3333-3333-333333333333',
   'bhajan',
   '🎵 Mera Bhola Hai Bhandari Kare Nandi Ki Sawari',
   '🎵 मेरा भोला है भंडारी करे नंदी की सवारी',
   'Listen to the soulful Mahadev Bhajan filled with divine flute harmony and peaceful chanting.',
   'सुनिए मनमोहक महादेव भजन "मेरा भोला है भंडारी करे नंदी की सवारी"।',
-  'd1111111-1111-1111-1111-111111111111',
-  'c3333333-3333-3333-3333-333333333333',
+  '11111111-1111-1111-1111-111111111111',
+  'a3333333-3333-3333-3333-333333333333',
   'Hindi',
   'playBhajan',
   'Play Bhajan',
@@ -89,17 +89,19 @@ INSERT INTO public.posts (
   NULL,
   'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
   54000, 18000, 920, 4100, 6300, FALSE, FALSE, 'published'
-);
+)
+ON CONFLICT (id) DO NOTHING;
 
 -- 4. SEED MANTRA DETAILS
 INSERT INTO public.mantras (post_id, mantra_text, mantra_meaning, mantra_meaning_hi, chanting_count) VALUES
 (
-  'p1111111-1111-1111-1111-111111111111',
+  'b1111111-1111-1111-1111-111111111111',
   'ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम्। उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात्॥',
   'We worship the Three-eyed Lord Shiva who is fragrant and nourishes all beings.',
   'हम तीन नेत्रों वाले सुगन्धित और सम्पूर्ण जगत् के पालनकर्ता भगवान शिव की आराधना करते हैं।',
   108
-);
+)
+ON CONFLICT (post_id) DO NOTHING;
 
 -- 5. SEED APP SETTINGS & FEATURE FLAGS
 INSERT INTO public.app_settings (setting_key, setting_value, description) VALUES
