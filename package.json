@@ -1,0 +1,28 @@
+{
+  "name": "bhagwa-backend",
+  "version": "1.0.0",
+  "description": "Production Supabase & PostgreSQL Backend Architecture for Bhagwa Devotional App and Admin Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "supabase:start": "supabase start",
+    "supabase:stop": "supabase stop",
+    "supabase:status": "supabase status",
+    "supabase:db:reset": "supabase db reset",
+    "supabase:gen:types": "supabase gen types typescript --local > src/types/database.types.ts"
+  },
+  "keywords": [
+    "supabase",
+    "postgresql",
+    "bhagwa",
+    "devotional",
+    "rls",
+    "edge-functions",
+    "cloudflare-r2"
+  ],
+  "author": "Bhagwa Team",
+  "license": "ISC",
+  "devDependencies": {
+    "supabase": "^2.114.0",
+    "typescript": "^5.0.0"
+  }
+}
